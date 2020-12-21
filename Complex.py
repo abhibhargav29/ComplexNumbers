@@ -46,6 +46,7 @@ class Complex(object):
         ans.real = math.sqrt(self.real**2 + self.img**2)
         return(ans)
 
+    #Overriding the str() function so we can easily print a complex number
     def __str__(self):
         if self.img== 0:
             result = "%.2f+0.00i" % (self.real)
